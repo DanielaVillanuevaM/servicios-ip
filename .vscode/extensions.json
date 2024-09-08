@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+    // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+    // List of extensions which should be recommended for users of this workspace.
+    "recommendations": [
+        "formulahendry.auto-rename-tag",
+        "aaron-bond.better-comments",
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens",
+        "shd101wyy.markdown-preview-enhanced",
+        "shd101wyy.markdown-preview-enhanced",
+        "devsense.phptools-vscode",
+        "zobo.php-intellisense",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker-spanish",
+        "masshuu12.too-long-line-limit",
+        "onecentlin.laravel5-snippets",
+        "codingyu.laravel-goto-view",
+        "onecentlin.laravel-blade",
+        "shufo.vscode-blade-formatter",
+        "devsense.composer-php-vscode",
+        "tomoki1207.pdf"
+    ],
+    // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+    "unwantedRecommendations": []
+}
