@@ -20,7 +20,8 @@
         "onecentlin.laravel-blade",
         "shufo.vscode-blade-formatter",
         "devsense.composer-php-vscode",
-        "tomoki1207.pdf"
+        "tomoki1207.pdf",
+        "bradlc.vscode-tailwindcss"
     ],
     // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
     "unwantedRecommendations": []
