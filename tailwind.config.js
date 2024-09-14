@@ -1,22 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 
-function withOpacity(variableName) {
-    return ({ opacityValue }) => {
-        if (opacityValue !== undefined) {
-            return `rgba(var(${variableName}), ${opacityValue})`;
-        }
-        return `rgb(var(${variableName}))`;
-    };
-}
-
 export default {
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
+        "./node_modules/flowbite/**/*.js",
     ],
     theme: {
         extend: {
+            minWidth: {},
             textColor: {
                 skin: {
                     base: withOpacity("--color-text-base"),
@@ -34,12 +27,19 @@ export default {
                     "button-muted": withOpacity("--color-button-muted"),
                 },
             },
-            gradientColorStops: {
-                skin: {
-                    hue: withOpacity("--color-fill"),
-                },
+            fontFamily: {
+                "kode-mono": ["Kode Mono", "monospace"],
             },
         },
     },
-    plugins: [],
+    plugins: [require("flowbite/plugin")],
 };
+
+function withOpacity(variableName) {
+    return ({ opacityValue }) => {
+        if (opacityValue !== undefined) {
+            return `rgba(var(${variableName}), ${opacityValue})`;
+        }
+        return `rgb(var(${variableName}))`;
+    };
+}
