@@ -2,7 +2,12 @@
 export default {
     content: [],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                "kode-mono": ["Kode Mono", "monospace"],
+                jetbrains: ["JetBrains Mono", "monospace"],
+            },
+        },
     },
     plugins: [],
 };
