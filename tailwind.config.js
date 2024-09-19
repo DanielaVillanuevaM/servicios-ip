@@ -29,6 +29,10 @@ export default {
             },
             fontFamily: {
                 "kode-mono": ["Kode Mono", "monospace"],
+                jetbrains: ["JetBrains Mono", "monospace"],
+            },
+            backgroundImage: {
+                "hero-pattern": "url('fondo.png')",
             },
         },
     },

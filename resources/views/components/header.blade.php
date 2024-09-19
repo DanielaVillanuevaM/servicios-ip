@@ -5,7 +5,7 @@
 </head>
 
 <nav
-    class="theme-header bg-skin-fill font-kode-mono fixed w-full z-20 top-0 start-0 border-b-8 border-[#794adb] text-skin-base">
+    class="theme-header bg-skin-fill font-kode-mono w-full z-10 sticky start-0 top-0 border-b-8 border-[#794adb] text-skin-base">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="http://localhost/servicios-ip/public/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="logo.svg" class="h-10" alt="Logo">
