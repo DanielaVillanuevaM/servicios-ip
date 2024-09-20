@@ -1,8 +1,8 @@
-@extends ('layouts.app')
+@extends('layouts.app')
 
 @section('content')
 
 <x-cookies></x-cookies>
-<x-register></x-register>
+<x-user></x-user>
 
 @endsection
