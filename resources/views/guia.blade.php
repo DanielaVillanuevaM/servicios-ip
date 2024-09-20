@@ -25,11 +25,14 @@
     </style>
 </head>
 <x-header></x-header>
-<body class="bg-cover bg-no-repeat font-jetbrains" style="background-image: url('tu-imagen-de-fondo.jpg');">
 
-    <div class="flex h-screen">
+<body class="antialiased bg-bottom font-jetbrains bg-no-repeat bg-fixed" style="background-image: url('fondo.png')">
+    <span class="sm:m-6 block text-black">Inicio > Guía de Usuarios...</span>
+
+    <div class="flex h-screen backdrop-filter backdrop-blur-sm">
         <!-- Barra lateral -->
-        <div class="w-48 bg-blue-50 p-5 flex flex-col shadow-lg">
+        <div class="w-1/4 bg-blue-50 bg-opacity-80 p-5 flex flex-col shadow-lg">
+            <a class="font-bold text-black hover:bg-blue-100 border-l-4 border-transparent hover:border-blue-500 font-kode" >Indice</a>
             <a href="#" class="p-3 mb-2 font-bold text-black hover:bg-blue-100 border-l-4 border-transparent hover:border-blue-500 font-kode" onclick="showContent('tema1')" id="tema1-link">Tema 1</a>
             <a href="#" class="p-3 mb-2 font-bold text-black hover:bg-blue-100 border-l-4 border-transparent hover:border-blue-500 font-kode" onclick="showContent('tema2')" id="tema2-link">Tema 2</a>
             <a href="#" class="p-3 mb-2 font-bold text-black hover:bg-blue-100 border-l-4 border-transparent hover:border-blue-500 font-kode" onclick="showContent('tema3')" id="tema3-link">Tema 3</a>
@@ -38,15 +41,13 @@
         </div>
 
         <!-- Contenido de los temas -->
-        <div class="flex-grow p-10" style="background: linear-gradient(to bottom right, #f0f7ff, #d6e4f0);">
-            <div class="bg-white rounded-lg shadow-lg p-10 font-jetbrains">
-                <div id="content">
-                    <!-- Se mostrará el contenido del tema aquí -->
-                    <h2 class="text-3xl text-blue-700 font-semibold border-b-2 border-blue-700 pb-2">Bienvenido</h2>
-                    <p class="text-lg text-gray-600 mt-4">
-                        Selecciona un tema en el menú para ver más detalles.
-                    </p>
-                </div>
+        <div class="w-3/4 p-10 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg font-jetbrains">
+            <div id="content">
+                <!-- Se mostrará el contenido del tema aquí -->
+                <h2 class="text-3xl text-blue-700 font-semibold border-b-2 border-blue-700 pb-2">Bienvenido</h2>
+                <p class="text-lg text-gray-600 mt-4">
+                    Selecciona un tema en el menú para ver más detalles.
+                </p>
             </div>
         </div>
     </div>
@@ -73,4 +74,5 @@
 
 </body>
 <x-footer></x-footer>
+
 </html>
