@@ -30,25 +30,25 @@
 <!-- here starts the grid  -->
 
 
-<div class="grid grid-cols-5 grid-rows-5 gap-4">
-    <div>
-        <button data-modal-hide="default-modal" type="button" class="text-black bg-cyan-400 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center">Dar Administrador</button>
+<div class="grid grid-cols-5 grid-rows-5 gap-4 mx-14 mt-10">
+    <div class="mr-3.5">
+        <button data-modal-hide="default-modal" type="button" class="w-44 min-h-16 text-black bg-cyan-300 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center">Dar Administrador</button>
     </div>
     <div class="col-start-1 row-start-2">
-        <button data-modal-hide="default-modal" type="button" class="text-black bg-cyan-400 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center">Quitar Administrador</button>
+        <button data-modal-hide="default-modal" type="button" class=" w-44 min-h-16 text-black bg-cyan-300 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center">Quitar Administrador</button>
     </div>
     <div class="col-start-1 row-start-3">
-        <button data-modal-hide="default-modal" type="button" class="text-black bg-cyan-400 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center">Eliminar Cuenta</button>
+        <button data-modal-hide="default-modal" type="button" class="w-44 min-h-16 text-black bg-cyan-300 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center">Eliminar Cuenta</button>
     </div>
-    <div class="col-span-4 row-span-5 col-start-2 row-start-1">
-        <h1>Id Número</h1>
-        <div>
+    <div class="col-span-4 row-span-5 col-start-2 row-start-1 w-10/12 bg-white font-semibold bg-opacity-80 min-h-96 text-2xl">
+        <h1 class="p-6 px-">Id Número</h1>
+        <div class="p-6">
             <h2>Nombre Completo</h2>
-            <h2>Nombre Completo del Usuario</h2>
+            <h2 class="px-4">Nombre Completo del Usuario</h2>
         </div>
-        <div>
+        <div class="p-6">
             <h2>Correo Electronico</h2>
-            <h2>correo@ejemplo.com</h2>
+            <h2 class="px-4">correo@ejemplo.com</h2>
         </div>
     </div>
 </div>
