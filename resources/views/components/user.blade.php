@@ -24,7 +24,7 @@
 
 <!-- user name or line divider -->
 <div class="flex bg-cyan-400 bg-opacity-25">
-    <h1 class="p-8 font-semibold">Nombre de Usuario</h1>
+    <h1 class="p-8 font-black text-2xl">Nombre de Usuario</h1>
 </div>
 
 <!-- here starts the grid  -->
@@ -40,15 +40,15 @@
     <div class="col-start-1 row-start-3">
         <button data-modal-hide="default-modal" type="button" class="w-44 min-h-16 text-black bg-cyan-300 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center">Eliminar Cuenta</button>
     </div>
-    <div class="col-span-4 row-span-5 col-start-2 row-start-1 w-10/12 bg-white font-semibold bg-opacity-80 min-h-96 text-2xl">
-        <h1 class="p-6 px-">Id Número</h1>
+    <div class="col-span-4 row-span-5 col-start-2 row-start-1 w-10/12 bg-white font-medium bg-opacity-80 min-h-96 text-2xl">
+        <h1 class="p-6 font-extrabold">Id Número</h1>
         <div class="p-6">
             <h2>Nombre Completo</h2>
-            <h2 class="px-4">Nombre Completo del Usuario</h2>
+            <h2 class="px-6">Nombre Completo del Usuario</h2>
         </div>
         <div class="p-6">
             <h2>Correo Electronico</h2>
-            <h2 class="px-4">correo@ejemplo.com</h2>
+            <h2 class="px-6">correo@ejemplo.com</h2>
         </div>
     </div>
 </div>

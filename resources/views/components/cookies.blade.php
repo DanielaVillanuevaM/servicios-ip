@@ -1,11 +1,11 @@
 <!-- Main modal -->
-<div id="default-modal" tabindex="-1" aria-hidden="true" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex items-center justify-center">
-    <div class="relative px-10 py-8 w-full max-w-96 bg-white shadow">
+<div id="default-modal" tabindex="-1" aria-hidden="true" class="fixed font-jetbrains inset-0 z-50 hidden bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="relative px-10 py-8 w-full max-w-md bg-white shadow">
         <!-- Modal content -->
         <div class="relative">
             <!-- Modal header -->
             <div class="flex items-center justify-between p-4 py-6 border-b">
-                <h1 class="text-xl text-black font-black mx-auto">
+                <h1 class="text-3xl text-black font-black mx-auto">
                     Uso de cookies
                 </h1>
             </div>

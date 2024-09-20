@@ -1,8 +1,8 @@
-<nav class="bg-[#3D1F7C] border-gray-200 ">
+<nav class="bg-[#3D1F7C] font-kode-mono border-gray-200 ">
     <!-- THIS IS THE COLOR dark:bg-[#3D1F7C] -->
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-6 pb-2">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <img src="logo.svg" class="h-10" alt="Logo">
             <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SafeNetIP</span>
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse rounded-lg">
