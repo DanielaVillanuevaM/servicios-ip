@@ -6,11 +6,11 @@ Route::get('/', function () {
     return view('scan');
 });
 
-Route::get('/Acerca de...', function () {
+Route::get('/acerca', function () {
     return view('acercade');
 });
 
-Route::get('/Gestor de Usuarios', function () {
+Route::get('/gestor', function () {
     return view('gestorlista');
 });
 
@@ -26,10 +26,23 @@ Route::get('/guia', function () {
     return view('guia');
 });
 
-Route::get('/inicioR', function () {
-    return view('inicioR');
+Route::get('/register', function () {
+    return view('register');
 });
 
 Route::get('/resultados', function () {
     return view('resultados');
 });
+
+Route::get('/seleccionado', function () {
+    return view('usuarioseleccionado');
+});
+
+Route::get('/prueba', function () {
+    return view('prueba');
+});
+
+use App\Http\Controllers\NmapController;
+
+Route::get('/nmap', [NmapController::class, 'index']);
+Route::post('/nmap/scan', [NmapController::class, 'scan']);

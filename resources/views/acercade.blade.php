@@ -23,10 +23,10 @@
 
 <body class="antialiased bg-bottom font-jetbrains bg-no-repeat bg-fixed" style="background-image: url('fondo.png')">
 
-    <div class="space-y-6 h-screen">
+    <div class="space-y-10">
         <span class="sm:m-6 block">Inicio > Acerca de...</span>
-        <div class="relative bg-[#95D8EB] w-full h-32 bg-opacity-60 flex">
-            <h1 class="sm:m-6 text-3xl font-extrabold text-skin-base sm:text-4xl">
+        <div class="relative bg-[#95D8EB] w-full h-auto bg-opacity-60 flex">
+            <h1 class="sm:m-6 p-5 text-3xl font-extrabold text-skin-base sm:text-4xl">
                 <span class="block">Acerca de...</span>
             </h1>
         </div>
