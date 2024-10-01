@@ -42,7 +42,7 @@ Route::get('/prueba', function () {
     return view('prueba');
 });
 
-use App\Http\Controllers\NmapController;
+Route::get('/cve', function () {
+    return view('cve');
+});
 
-Route::get('/nmap', [NmapController::class, 'index']);
-Route::post('/nmap/scan', [NmapController::class, 'scan']);
