@@ -26,22 +26,22 @@
         </div>
         <div class="items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1" id="navbar-sticky">
             <ul
-                class="flex flex-col p-4 xl:p-0 mt-4 font-medium  xl:space-x-8 rtl:space-x-reverse xl:flex-row xl:mt-0 xl:border-0">
+                class="flex flex-col p-4 xl:p-0 mt-4 font-medium xl:space-x-8 rtl:space-x-reverse xl:flex-row xl:mt-0 xl:border-0">
                 <li>
-                    <a href="#"
+                    <a href="/servicios-ip/public/inicioR"
                         class="block py-2 px-3 text-skin-base rounded hover:bg-[#794adb] xl:hover:bg-transparent xl:hover:underline xl:p-0">Inicio</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="/servicios-ip/public/guia"
                         class="block py-2 px-3 text-skin-base rounded hover:bg-[#794adb] xl:hover:bg-transparent xl:hover:underline xl:p-0">Guía</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="/servicios-ip/public/Acerca de..."
                         class="block py-2 px-3 text-skin-base rounded hover:bg-[#794adb] xl:hover:bg-transparent xl:hover:underline xl:p-0">Acerca
                         de...</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="/servicios-ip/public/Gestor de Usuarios"
                         class="block py-2 px-3 text-skin-base rounded hover:bg-[#794adb] xl:hover:bg-transparent xl:hover:underline xl:p-0">Gestor
                         de Usuarios</a>
                 </li>
@@ -50,10 +50,21 @@
                         class="block py-2 px-3 text-skin-base rounded hover:bg-[#794adb] xl:hover:bg-transparent xl:hover:underline xl:p-0 xl:pl-20">Nombre de Usuario</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="#" onclick="logoutAndRedirect()"
                         class="block py-2 px-3 text-skin-base rounded hover:bg-[#794adb] xl:hover:bg-transparent xl:hover:underline xl:p-0">Salir</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<script>
+    function logoutAndRedirect() {
+        // Aquí puedes agregar la lógica de cierre de sesión (por ejemplo, hacer una petición al backend)
+        // Simulando cierre de sesión
+        console.log("Cerrando sesión...");
+
+        // Redirigir a la página de escaneo
+        window.location.href = "/scan";
+    }
+</script>
