@@ -25,7 +25,7 @@
     <div class="sm:m-6 space-y-6 h-screen">
 
         <x-cookies></x-cookies>
-        {{--  --}}
+        {{-- --}}
 
         <span class="block">Inicio</span>
         <div class="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden shadow-lg">
@@ -37,9 +37,23 @@
                 <h3 class="text-xl font-bold text-skin-base">
                     <span class="block">Dirección IP*</span>
                 </h3>
+                @guest
+                <div class="group relative">
+                    <input class="mb-3 block w-full cursor-not-allowed appearance-none border border-black bg-purple-100 px-4 py-3 text-gray-700 focus:border-black focus:bg-white" id="grid-first-name" type="text" placeholder="XXX.XXX.XXX.XXX" disabled />
+
+                    <div class="absolute z-10 -right-24 -mt-10 hidden w-max max-w-48 bg-cyan-300 bg-opacity-45 px-2 py-3 group-hover:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="m-auto size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                        <div class="text-center text-xs text-black">Inicie sesión para poder modificar este campo</div>
+                    </div>
+                </div>
+                @endguest
+                @auth
                 <input
                     class="appearance-none block w-full bg-purple-100 text-gray-700 border border-black py-3 px-4 mb-3 focus:bg-white focus:border-black"
                     id="grid-first-name" type="text" placeholder="XXX.XXX.XXX.XXX">
+                @endauth
                 <br>
                 <h3 class="text-xl font-bold text-skin-base">
                     <span class="block">Tipo de Escaneo*</span>
