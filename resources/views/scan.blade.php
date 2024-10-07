@@ -23,9 +23,8 @@
 
 <body class="antialiased bg-bottom font-jetbrains bg-no-repeat bg-fixed" style="background-image: url('fondo.png')">
     <div class="sm:m-6 space-y-6 h-screen">
-
         <x-cookies></x-cookies>
-        {{--  --}}
+
 
         <span class="block">Inicio</span>
         <div class="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden shadow-lg">
