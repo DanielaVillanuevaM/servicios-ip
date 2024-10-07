@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ControllerRegister;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,6 +30,7 @@ Route::get('/guia', function () {
 Route::get('/register', function () {
     return view('register');
 });
+Route::post('/register', [ControllerRegister::class, 'store'])->name('register.store');
 
 Route::get('/resultados', function () {
     return view('resultados');

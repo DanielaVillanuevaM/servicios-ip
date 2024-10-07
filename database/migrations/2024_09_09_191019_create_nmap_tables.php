@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('Usuarios', function (Blueprint $table) {
-            $table->integer('nombreUsuario')->primary();
+            $table->increments('nombreUsuario')->primary();
+            // $table->integer('nombreUsuario')->primary();
             $table->string('nombre', length: 30)->nullable();
             $table->string('apellidoPaterno', length: 30)->nullable();
             $table->string('apellidoMaterno', length: 30);
@@ -26,7 +27,7 @@ return new class extends Migration
             $table->string('direccionIpOrigen', length: 35);
             $table->string('direccionIpDestino', length: 35)->nullable();
             $table->date('fecha')->nullable();
-            $table->integer('idUsuario');
+            $table->unsignedInteger('idUsuario');
             $table->foreign('idUsuario')->references('nombreUsuario')->on('Usuarios');
         });
 
