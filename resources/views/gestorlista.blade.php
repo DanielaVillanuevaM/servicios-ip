@@ -25,8 +25,8 @@
 
     <div class="space-y-6 h-screen">
         <span class="sm:m-6 block">Inicio > Gestor de Usuarios...</span>
-        <div class="relative bg-[#95D8EB] w-full h-32 bg-opacity-60 flex">
-            <h1 class="sm:m-6 text-3xl font-extrabold text-skin-base sm:text-4xl">
+        <div class="relative bg-[#95D8EB] w-full bg-opacity-60 flex">
+            <h1 class="sm:m-6 text-3xl font-extrabold text-skin-base sm:text-4xl p-6">
                 <span class="block">Gestor de Usuarios</span>
             </h1>
         </div>
@@ -45,7 +45,7 @@
             </div>
         </form>
 
-        <div class="relative bg-[#95D8EB] bg-opacity-60 text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
+        <div class="relative bg-[#bfe8f3] text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
             <div class="relative w-full mx-auto py-10 px-auto sm:py-6 sm:px-6 lg:px-8">
                 <p>ID XXX-XXX Nombre del usuario
                 </p>
@@ -53,7 +53,7 @@
             </div>
         </div>
         <br>
-        <div class="relative bg-[#95D8EB] bg-opacity-60 text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
+        <div class="relative bg-[#bfe8f3] text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
             <div class="relative w-full mx-auto py-10 px-auto sm:py-6 sm:px-6 lg:px-8">
                 <p>ID XXX-XXX Nombre del usuario
                 </p>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <br>
-        <div class="relative bg-[#95D8EB] bg-opacity-60 text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
+        <div class="relative bg-[#bfe8f3] text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
             <div class="relative w-full mx-auto py-10 px-auto sm:py-6 sm:px-6 lg:px-8">
                 <p>ID XXX-XXX Nombre del usuario
                 </p>

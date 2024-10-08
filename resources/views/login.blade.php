@@ -51,7 +51,7 @@
                 </div>
                 <div class="relative bg-skin-fill mx-auto overflow-hidden w-full sm:flex sm:justify-center">
                     <a href="#"
-                        class="w-full text-[#95D8EB]  flex items-center justify-center px-4 py-3 text-lg font-medium">
+                        class="w-full text-[#5EB2E5] font-bold flex items-center justify-center px-4 py-3 text-lg">
                         No tienes una cuenta? Haz clic aquí </a>
                 </div>
             </div>
