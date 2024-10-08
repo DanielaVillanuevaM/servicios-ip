@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ControllerRegister;
+use App\Http\Controllers\ControllerUser;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,9 +11,7 @@ Route::get('/acerca', function () {
     return view('acercade');
 });
 
-Route::get('/gestor', function () {
-    return view('gestorlista');
-});
+Route::get('/gestor', [ControllerUser::class, 'set'])->name('gestor.set');
 
 Route::get('/login', function () {
     return view('login');
@@ -30,7 +28,7 @@ Route::get('/guia', function () {
 Route::get('/register', function () {
     return view('register');
 });
-Route::post('/register', [ControllerRegister::class, 'store'])->name('register.store');
+Route::post('/register', [ControllerUser::class, 'store'])->name('register.store');
 
 Route::get('/resultados', function () {
     return view('resultados');

@@ -45,28 +45,30 @@
             </div>
         </form>
 
+        @foreach($users as $user)
         <div class="relative bg-[#bfe8f3] text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
             <div class="relative w-full mx-auto py-10 px-auto sm:py-6 sm:px-6 lg:px-8">
-                <p>ID XXX-XXX Nombre del usuario
+                <p>
+                    {{$user->nombreUsuario}}
+                    {{$user->nombre}}
+                    {{$user->apellidoPaterno}}
+                    {{$user->apellidoMaterno}}
                 </p>
 
             </div>
         </div>
         <br>
-        <div class="relative bg-[#bfe8f3] text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
+        @endforeach
+
+        <!-- let it for example please :) -->
+
+        <!-- <div class="relative bg-[#bfe8f3] text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
             <div class="relative w-full mx-auto py-10 px-auto sm:py-6 sm:px-6 lg:px-8">
                 <p>ID XXX-XXX Nombre del usuario
                 </p>
 
             </div>
-        </div>
-        <br>
-        <div class="relative bg-[#bfe8f3] text-xl max-w-screen-xl mx-auto overflow-hidden shadow-lg">
-            <div class="relative w-full mx-auto py-10 px-auto sm:py-6 sm:px-6 lg:px-8">
-                <p>ID XXX-XXX Nombre del usuario
-                </p>
-            </div>
-        </div>
+        </div> -->
 
     </div>
 

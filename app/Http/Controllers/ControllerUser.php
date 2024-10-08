@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Usuario;
-use Illuminate\Support\Facades\Hash;
 
-class ControllerRegister extends Controller
+class ControllerUser extends Controller
 {
     //
     public function store(Request $request)
@@ -24,5 +23,12 @@ class ControllerRegister extends Controller
 
         Usuario::create($validate);
         return redirect()->back()->with('Success', 'Usuario creado exitosamente.');
+    }
+
+    public function set()
+    {
+        $users = Usuario::all();
+
+        return view('gestorlista', compact('users'));
     }
 }
