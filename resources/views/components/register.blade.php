@@ -1,52 +1,66 @@
-<form class="w-full max-w-3xl p-10 shadow-2xl m-auto bg-white font-jetbrains">
-    <div class="flex items-center justify-between py-6">
-        <h1 class="text-2xl text-black font-black">
-            Registro
-        </h1>
-    </div>
+<form class="w-full max-w-lg">
     <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-black text-sm font-extrabold mb-2" for="nombre">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="nombre">
                 Nombre *
             </label>
-            <input class="appearance-none block w-full text-black border border-black py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white placeholder:text-violet-600" id="nombre" type="text" placeholder="Nombre">
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nombre" type="text" placeholder="Jane">
+            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
         </div>
         <div class="w-full md:w-1/2 px-3">
-            <label class="block uppercase tracking-wide text-black text-sm font-extrabold mb-2" for="correo">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="correo">
                 Correo Electronico *
             </label>
-            <input class="appearance-none block w-full text-black border border-gblack py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 placeholder:text-violet-600" id="correo" type="email" placeholder="example@mail.com">
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="correo" type="email" placeholder="A000000@alumnos.uaslp.mx">
         </div>
     </div>
     <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-black text-sm font-extrabold mb-2" for="apellido_paterno">
-                Apellido Paterno *
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="nombre">
+                Nombre *
             </label>
-            <input class="appearance-none block w-full text-black border border-black py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white placeholder:text-violet-600" id="apellido_paterno" type="text" placeholder="Apellido Paterno">
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nombre" type="text" placeholder="Jane">
+            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
         </div>
-        <div class="w-full md:w-1/2 px-3">
-            <label class="block uppercase tracking-wide text-black text-sm font-extrabold mb-2" for="contraseña">
-                Contraseña *
+        <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                Password
             </label>
-            <input class="appearance-none block w-full text-black border border-black py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white placeholder:text-violet-600" id="contraseña" type="password" placeholder="Contraseña">
-        </div>
-    </div>
-    <div class="flex flex-wrap -mx-3 mb-6">
-        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-black text-sm font-extrabold mb-2" for="apellido_materno">
-                Apellido Materno *
-            </label>
-            <input class="appearance-none block w-full text-black border border-black py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white placeholder:text-violet-600" id="apellido_materno" type="text" placeholder="Apellido Materno">
-        </div>
-        <div class="w-full md:w-1/2 px-3">
-            <label class="block uppercase tracking-wide text-black text-sm font-extrabold mb-2" for="confirmar_contraseña">
-                Confirmar contraseña *
-            </label>
-            <input class="appearance-none block w-full text-black border border-black py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white placeholder:text-violet-600" id="confirmar_contraseña" type="password" placeholder="Contraseña">
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-password" type="password" placeholder="******************">
+            <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
         </div>
     </div>
-    <div class="flex justify-center items-center p-4">
-        <button data-modal-hide="default-modal" type="button" class="text-black min-w-52 bg-cyan-300 hover:bg-cyan-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold text-base px-5 py-2.5 text-center">Registrarse</button>
+
+
+    <div class="flex flex-wrap -mx-3 mb-2">
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                City
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
+        </div>
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                State
+            </label>
+            <div class="relative">
+                <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                    <option>New Mexico</option>
+                    <option>Missouri</option>
+                    <option>Texas</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                Zip
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
+        </div>
     </div>
 </form>

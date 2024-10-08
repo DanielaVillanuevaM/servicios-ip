@@ -25,23 +25,29 @@
         </div>
     </div>
 </div>
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const closeModalButtons = document.querySelectorAll('[data-modal-hide]');
-        const modal = document.getElementById('default-modal');
 
-        modal.classList.remove('hidden');
+        // Show the "Acuerdos de Uso" modal by default
+        const usageModal = document.getElementById('usage-modal');
+        usageModal.classList.remove('hidden');
 
-        // closing the modal
         closeModalButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const modalId = button.getAttribute('data-modal-hide');
                 const modal = document.getElementById(modalId);
                 if (modal) {
                     modal.classList.add('hidden');
+
+                    // If the closed modal is the "Acuerdos de Uso", show "Uso de Cookies" modal
+                    if (modalId === 'usage-modal') {
+                        const cookiesModal = document.getElementById('default-modal');
+                        cookiesModal.classList.remove('hidden');
+                    }
                 }
             });
         });
-
     });
 </script>
